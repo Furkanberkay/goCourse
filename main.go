@@ -1,20 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"goLesson/conditionals"
+)
 
 func main() {
-
-	var metin string = "selam"
-	fmt.Println(metin)
-
-	var kdv int = 10
-
-	fmt.Print(kdv)
-
-	var vergi float32 = 10.2
-
-	fmt.Println(vergi)
-
-	kdv2 := 25.2
-	fmt.Printf("veri tipi :  %T : ", kdv2)
+	// veriables.Demo1()
+	conditionals.Demo1()
 }
