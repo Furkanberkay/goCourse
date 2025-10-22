@@ -9,10 +9,10 @@ func Demo1() {
 	if withdrawAmount <= balance {
 		fmt.Println("parayı alıınız")
 		balance = balance - withdrawAmount
-		fmt.Print("güncel bakiyeniz : " + fmt.Sprintf("%.2f", balance))
+		fmt.Println("güncel bakiyeniz : " + fmt.Sprintf("%.2f", balance))
 	} else {
 
-		fmt.Print("yetersiz bakiye")
+		fmt.Println("yetersiz bakiye")
 	}
 
 }
