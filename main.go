@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goLesson/loops"
+	"goLesson/arrays"
 )
 
 func main() {
@@ -10,5 +10,6 @@ func main() {
 	// conditionals.Demo2()
 	// loops.Demo1()
 	// loops.Workshop1()
-	loops.Workshop2()
+	// loops.Workshop2()
+	arrays.ArraysDemo1()
 }
