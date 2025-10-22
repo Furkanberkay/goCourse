@@ -11,5 +11,6 @@ func main() {
 	// loops.Demo1()
 	// loops.Workshop1()
 	// loops.Workshop2()
-	arrays.ArraysDemo1()
+	// arrays.ArraysDemo1()
+	arrays.MultiDimensionalArrays()
 }
