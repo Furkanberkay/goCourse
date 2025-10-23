@@ -3,6 +3,9 @@ package slices
 import "fmt"
 
 func SlicesDemo1() {
+	// Creating a slice using make
+	// and demonstrating length and capacity
+	// and appending elements to it
 	numbers := make([]int, 0)
 	numbers = append(numbers, 2, 3, 4, 5)
 

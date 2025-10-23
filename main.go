@@ -1,7 +1,8 @@
 package main
 
 import (
-	"goLesson/slices"
+	"fmt"
+	"goLesson/functions"
 )
 
 func main() {
@@ -13,5 +14,8 @@ func main() {
 	// loops.Workshop2()
 	// arrays.ArraysDemo1()
 	// arrays.MultiDimensionalArrays()
-	slices.SlicesDemo1()
+	// slices.SlicesDemo1()
+	// slices.Demo2()
+	result, _ := functions.VariadicFunction(1, 2, 3, 4)
+	fmt.Println(result)
 }
