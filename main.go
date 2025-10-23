@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goLesson/arrays"
+	"goLesson/slices"
 )
 
 func main() {
@@ -12,5 +12,6 @@ func main() {
 	// loops.Workshop1()
 	// loops.Workshop2()
 	// arrays.ArraysDemo1()
-	arrays.MultiDimensionalArrays()
+	// arrays.MultiDimensionalArrays()
+	slices.SlicesDemo1()
 }
