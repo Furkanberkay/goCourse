@@ -26,8 +26,12 @@ func main() {
 	// fmt.Println(numberDemo)
 	// fmt.Println(numberfunc)
 
-	demo := structs.StructsRun("12", "berkay", 211, "merhabalar")
+	// demo := structs.StructsRun("12", "berkay", 211, "merhabalar")
 
-	fmt.Println(demo)
+	// fmt.Println(demo)
+
+	var customer = structs.AddCustomer("berkay", "ozcan", 23)
+	customer.Ageup()
+	fmt.Println(customer.Age)
 
 }
