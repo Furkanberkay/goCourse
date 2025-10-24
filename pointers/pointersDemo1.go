@@ -1,6 +1,8 @@
 package pointers
 
-func NumberAddOne(number int) int {
-	return number + 1
+func NumberAddOne(number *int) int {
+	*number = *number + 1
+
+	return *number
 
 }

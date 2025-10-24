@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goLesson/maps"
-	"goLesson/pointers"
+	"goLesson/structs"
 )
 
 func main() {
@@ -20,11 +19,15 @@ func main() {
 	// result, _ := functions.VariadicFunction(1, 2, 3, 4)
 	// fmt.Println(result)
 
-	maps.MapsDemo()
-	numberDemo := 10
-	var numberfunc = pointers.NumberAddOne(numberDemo)
+	// maps.MapsDemo()
+	// numberDemo := 10
+	// var numberfunc = pointers.NumberAddOne(&numberDemo)
 
-	fmt.Println(numberfunc)
-	fmt.Println(numberDemo)
+	// fmt.Println(numberDemo)
+	// fmt.Println(numberfunc)
+
+	demo := structs.StructsRun("12", "berkay", 211, "merhabalar")
+
+	fmt.Println(demo)
 
 }
