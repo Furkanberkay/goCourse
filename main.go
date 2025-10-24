@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"goLesson/functions"
+	"goLesson/maps"
+	"goLesson/pointers"
 )
 
 func main() {
@@ -16,6 +17,14 @@ func main() {
 	// arrays.MultiDimensionalArrays()
 	// slices.SlicesDemo1()
 	// slices.Demo2()
-	result, _ := functions.VariadicFunction(1, 2, 3, 4)
-	fmt.Println(result)
+	// result, _ := functions.VariadicFunction(1, 2, 3, 4)
+	// fmt.Println(result)
+
+	maps.MapsDemo()
+	numberDemo := 10
+	var numberfunc = pointers.NumberAddOne(numberDemo)
+
+	fmt.Println(numberfunc)
+	fmt.Println(numberDemo)
+
 }
