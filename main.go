@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goLesson/structs"
+	goroutins "goLesson/goRoutins"
 )
 
 func main() {
@@ -30,8 +30,22 @@ func main() {
 
 	// fmt.Println(demo)
 
-	var customer = structs.AddCustomer("berkay", "ozcan", 23)
-	customer.Ageup()
-	fmt.Println(customer.Age)
+	// var customer = structs.AddCustomer("berkay", "ozcan", 23)
+	// customer.Ageup()
+	// fmt.Println(customer.Age)
 
+	// go goroutins.EvenNumbers()
+	// goroutins.OddNumbers()
+
+	// time.Sleep(2 * time.Second)
+	// fmt.Println("bitti")
+	//
+
+	var f1 = goroutins.CreateFruit("1221", "ayva", 123.2)
+
+	var fruidName = f1.Name
+	var fruidId = f1.Id
+	var fruidPrice = f1.Price
+
+	fmt.Println("meyve id'si : ", fruidId, "meyve ismi :", fruidName, "meyve fiyatı : ", fruidPrice)
 }
