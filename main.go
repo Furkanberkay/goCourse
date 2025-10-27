@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	goroutins "goLesson/goRoutins"
+	"goLesson/channels"
 )
 
 func main() {
@@ -41,11 +41,16 @@ func main() {
 	// fmt.Println("bitti")
 	//
 
-	var f1 = goroutins.CreateFruit("1221", "ayva", 123.2)
+	// var f1 = goroutins.CreateFruit("1221", "ayva", 123.2)
 
-	var fruidName = f1.Name
-	var fruidId = f1.Id
-	var fruidPrice = f1.Price
+	// var fruidName = f1.Name
+	// var fruidId = f1.Id
+	// var fruidPrice = f1.Price
 
-	fmt.Println("meyve id'si : ", fruidId, "meyve ismi :", fruidName, "meyve fiyatı : ", fruidPrice)
+	// fmt.Println("meyve id'si : ", fruidId, "meyve ismi :", fruidName, "meyve fiyatı : ", fruidPrice)
+
+	datas := channels.GetData()
+
+	fmt.Println(datas)
+
 }
