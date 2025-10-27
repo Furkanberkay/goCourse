@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"goLesson/channels"
+	"goLesson/interfaces"
 )
 
 func main() {
@@ -49,8 +48,21 @@ func main() {
 
 	// fmt.Println("meyve id'si : ", fruidId, "meyve ismi :", fruidName, "meyve fiyatı : ", fruidPrice)
 
-	datas := channels.GetData()
+	// datas := channels.GetData()
 
-	fmt.Println(datas)
+	// fmt.Println(datas)
+
+	r, err := interfaces.NewRectangle(10, 20)
+	if err != nil {
+		panic(err)
+	}
+
+	c, err := interfaces.NewCircle(5)
+	if err != nil {
+		panic(err)
+	}
+
+	interfaces.PrintArea(r) // value ver; çalışır
+	interfaces.PrintArea(c) // value ver; çalışır
 
 }
