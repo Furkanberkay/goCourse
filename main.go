@@ -63,6 +63,6 @@ func main() {
 	// interfaces.PrintArea(r) // value ver; çalışır
 	// interfaces.PrintArea(c) // value ver; çalışır
 
-	interfaces.Demo2()
+	interfaces.Demo4()
 
 }

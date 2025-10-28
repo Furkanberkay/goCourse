@@ -2,7 +2,7 @@ package interfaces
 
 import "fmt"
 
-type CreditCalculate interface {
+type CreditCalculator interface {
 	Calculate() float64
 }
 
@@ -39,7 +39,7 @@ func (c Car) Calculate() float64 {
 	return c.creditPaymentTotal * c.rate / 12
 }
 
-func CalculateMonthlyPayment(c []CreditCalculate) float64 {
+func CalculateMonthlyPayment(c []CreditCalculator) float64 {
 	var total float64 = 0
 
 	for _, v := range c {
@@ -52,7 +52,7 @@ func Demo2() {
 	car, _ := NewCar(12000, "merco s", 200)
 	mortgage, _ := NewMortgage(20000, 200)
 
-	credits := []CreditCalculate{car, mortgage}
+	credits := []CreditCalculator{car, mortgage}
 
 	total := CalculateMonthlyPayment(credits)
 	fmt.Println("toplam borç : ", total)
