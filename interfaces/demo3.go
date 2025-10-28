@@ -78,9 +78,18 @@ func CalculateMonthlyLogistics(s []ShippingCalculator) float64 {
 }
 
 func Demo4() {
-	std, _ := NewStandardShipment(50, 12, 120, 0.5, 0.2)
-	exp, _ := NewExpressShipment(60, 8, 80, 1.5)
-	frg, _ := NewFragileShipment(55, 5, 60, 30)
+	std, err := NewStandardShipment(50, 12, 120, 0.5, 0.2)
+	if err != nil {
+		panic(err)
+	}
+	exp, err := NewExpressShipment(60, 8, 80, 1.5)
+	if err != nil {
+		panic(err)
+	}
+	frg, err := NewFragileShipment(55, 5, 60, 30)
+	if err != nil {
+		panic(err)
+	}
 
 	collection := []ShippingCalculator{std, exp, frg}
 
