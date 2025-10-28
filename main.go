@@ -1,6 +1,8 @@
 package main
 
-import "goLesson/interfaces"
+import (
+	errorhandling "goLesson/error_handling"
+)
 
 func main() {
 	// veriables.Demo1()
@@ -63,6 +65,10 @@ func main() {
 	// interfaces.PrintArea(r) // value ver; çalışır
 	// interfaces.PrintArea(c) // value ver; çalışır
 
-	interfaces.Demo4()
+	// interfaces.Demo4()
+
+	// defers.Demo()
+
+	errorhandling.Demo()
 
 }
