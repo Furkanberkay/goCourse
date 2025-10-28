@@ -50,6 +50,29 @@ func (r Rectangle) Width() float64  { return r.width }
 func (r Rectangle) Height() float64 { return r.height }
 func (c Circle) Radius() float64    { return c.radius }
 
+// ------ Setters
+
+func (r *Rectangle) SetRectangleWidth(w float64) error {
+	if w <= 0 {
+		return fmt.Errorf("width must be > 0")
+	}
+	r.width = w
+	return nil
+}
+
+func (r *Rectangle) SetRectangleHeight(h float64) {
+	r.height = h
+}
+
+func (r *Rectangle) SetRectangleHeightAndWidth(h, w float64) error {
+	if h <= 0 || w <= 0 {
+		return fmt.Errorf("height and width must be > 0")
+	}
+	r.height = h
+	r.width = w
+	return nil
+}
+
 // --- Pure methods (no side effects) ---
 
 // Value receiver: küçük, immutable veri; kopya maliyeti düşük.

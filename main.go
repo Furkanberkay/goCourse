@@ -1,8 +1,6 @@
 package main
 
-import (
-	"goLesson/interfaces"
-)
+import "goLesson/interfaces"
 
 func main() {
 	// veriables.Demo1()
@@ -52,17 +50,19 @@ func main() {
 
 	// fmt.Println(datas)
 
-	r, err := interfaces.NewRectangle(10, 20)
-	if err != nil {
-		panic(err)
-	}
+	// r, err := interfaces.NewRectangle(10, 20)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	c, err := interfaces.NewCircle(5)
-	if err != nil {
-		panic(err)
-	}
+	// c, err := interfaces.NewCircle(5)
+	// if err != nil {
+	// 	panic(err)
+	// }
 
-	interfaces.PrintArea(r) // value ver; çalışır
-	interfaces.PrintArea(c) // value ver; çalışır
+	// interfaces.PrintArea(r) // value ver; çalışır
+	// interfaces.PrintArea(c) // value ver; çalışır
+
+	interfaces.Demo2()
 
 }
