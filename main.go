@@ -1,8 +1,6 @@
 package main
 
-import (
-	errorhandling "goLesson/error_handling"
-)
+import stringfunctions "goLesson/string_functions"
 
 func main() {
 	// veriables.Demo1()
@@ -69,6 +67,9 @@ func main() {
 
 	// defers.Demo()
 
-	errorhandling.Demo()
+	// fmt.Println(errorhandling.TahminEt(122))
 
+	// stringfunctions.Demo1()
+
+	stringfunctions.Demo2()
 }
