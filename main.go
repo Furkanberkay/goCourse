@@ -1,6 +1,8 @@
 package main
 
-import stringfunctions "goLesson/string_functions"
+import (
+	"goLesson/restful"
+)
 
 func main() {
 	// veriables.Demo1()
@@ -71,5 +73,7 @@ func main() {
 
 	// stringfunctions.Demo1()
 
-	stringfunctions.Demo2()
+	// stringfunctions.Demo2()
+
+	restful.Demo()
 }
