@@ -75,5 +75,5 @@ func main() {
 
 	// stringfunctions.Demo2()
 
-	restful.Demo()
+	restful.Demo2()
 }
